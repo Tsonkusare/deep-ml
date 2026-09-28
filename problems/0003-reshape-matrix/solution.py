@@ -5,4 +5,4 @@ def reshape_matrix(a: list[list[int|float]], new_shape: tuple[int, int]) -> list
 	elem = sum(len(row) for row in a ) if a else 0
 	if elem != new_shape[0] * new_shape[1]:
 		return []
-	return np.array(a).reshape(new_shape).tolist()
+	return np.array(a).reshape(new_shape)
